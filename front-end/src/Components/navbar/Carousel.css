@@ -1,0 +1,23 @@
+.carousel-inner {
+  height: 50rem;
+}
+
+.carousel-item {
+  height: 50rem;
+}
+
+.carousel-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  height: 50rem;
+  opacity: 0.8;
+}
+
+.carousel-item video source {
+  height: 50rem;
+}
+
+.carousel-wrapper {
+  position: relative;
+}

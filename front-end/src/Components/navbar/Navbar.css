@@ -1,0 +1,14 @@
+.navigationBar {
+  position: absolute; /* Navbar'ın carousel içinde sabit kalmasını sağlar */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.Navbarlink {
+  margin-right: 2rem;
+}
+
+.carousel-wrapper {
+  position: relative;
+}

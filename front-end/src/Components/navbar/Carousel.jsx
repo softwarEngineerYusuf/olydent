@@ -5,6 +5,22 @@ import Video2 from "../../assets/Video2.mp4";
 function Carousel() {
   return (
     <>
+      <div className="carousel-caption">
+        <h4>Ağız Sağlığınızı Önemsiyoruz. Çünkü siz değerlisiniz...</h4>
+        <br />
+        <hr style={{ width: "25%" }} />
+        <br />
+        <br />
+        <h1>Diş Sağlığınız İçin En İyi Tercih, Olydent.</h1>
+        <br />
+        <hr style={{ width: "25%" }} />
+        <br />
+        <p>
+          Olydent Bayrampaşa Diş Kliniğimiz, alanında uzman ve deneyimli
+          hekimlerim kadrosuyla siz değerli hastalarımıza en iyi hizmeti
+          sunabilmek için kurulmuştur.
+        </p>
+      </div>
       <div
         id="carouselExample"
         className="carousel slide"

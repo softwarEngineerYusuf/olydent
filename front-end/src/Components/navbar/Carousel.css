@@ -1,23 +1,34 @@
 .carousel-inner {
-  height: 50rem;
+  height: 45rem;
+  overflow: hidden;
 }
 
 .carousel-item {
-  height: 50rem;
+  height: 45rem;
 }
 
 .carousel-item video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  height: 50rem;
+  /* height: 50rem; */
   opacity: 0.8;
 }
 
 .carousel-item video source {
-  height: 50rem;
+  height: auto;
 }
 
 .carousel-wrapper {
   position: relative;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* Carousel'in üzerinde kalması için */
+  color: black; /* Metin rengi */
+  text-align: center; /* Metni ortalamak için */
 }

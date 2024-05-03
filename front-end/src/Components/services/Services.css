@@ -1,0 +1,23 @@
+.servicesh1 {
+  margin-top: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.serviceshP {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicesCard {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  border: 1px solid red;
+  border-radius: 2rem;
+  margin-top: 1rem;
+}

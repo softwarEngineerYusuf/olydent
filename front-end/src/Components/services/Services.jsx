@@ -32,10 +32,7 @@ function Services() {
               <div className="baslık" style={{ marginTop: "1rem" }}>
                 Başlık
               </div>
-              <div
-                className="açıklama"
-                style={{ marginTop: "1rem", marginBottom: "4rem" }}
-              >
+              <div className="aciklama">
                 Sağlıklı uygulamalarla yalnız eksik dişlerinizi doldurmayacak
                 aynı zamanda hayat standartınızı artıracak profesyonel implant
                 uygulaması için Bayrampaşa Diş Kliniğimize bekliyoruz.
@@ -51,10 +48,7 @@ function Services() {
               <div className="baslık" style={{ marginTop: "1rem" }}>
                 Başlık
               </div>
-              <div
-                className="açıklama"
-                style={{ marginTop: "1rem", marginBottom: "4rem" }}
-              >
+              <div className="aciklama">
                 Sağlıklı uygulamalarla yalnız eksik dişlerinizi doldurmayacak
                 aynı zamanda hayat standartınızı artıracak profesyonel implant
                 uygulaması için Bayrampaşa Diş Kliniğimize bekliyoruz.
@@ -70,10 +64,7 @@ function Services() {
               <div className="baslık" style={{ marginTop: "1rem" }}>
                 Başlık
               </div>
-              <div
-                className="açıklama"
-                style={{ marginTop: "1rem", marginBottom: "4rem" }}
-              >
+              <div className="aciklama">
                 Sağlıklı uygulamalarla yalnız eksik dişlerinizi doldurmayacak
                 aynı zamanda hayat standartınızı artıracak profesyonel implant
                 uygulaması için Bayrampaşa Diş Kliniğimize bekliyoruz.
@@ -89,10 +80,7 @@ function Services() {
               <div className="baslık" style={{ marginTop: "1rem" }}>
                 Başlık
               </div>
-              <div
-                className="açıklama"
-                style={{ marginTop: "1rem", marginBottom: "4rem" }}
-              >
+              <div className="aciklama">
                 Sağlıklı uygulamalarla yalnız eksik dişlerinizi doldurmayacak
                 aynı zamanda hayat standartınızı artıracak profesyonel implant
                 uygulaması için Bayrampaşa Diş Kliniğimize bekliyoruz.
@@ -108,10 +96,7 @@ function Services() {
               <div className="baslık" style={{ marginTop: "1rem" }}>
                 Başlık
               </div>
-              <div
-                className="açıklama"
-                style={{ marginTop: "1rem", marginBottom: "4rem" }}
-              >
+              <div className="aciklama">
                 Sağlıklı uygulamalarla yalnız eksik dişlerinizi doldurmayacak
                 aynı zamanda hayat standartınızı artıracak profesyonel implant
                 uygulaması için Bayrampaşa Diş Kliniğimize bekliyoruz.
@@ -127,10 +112,7 @@ function Services() {
               <div className="baslık" style={{ marginTop: "1rem" }}>
                 Başlık
               </div>
-              <div
-                className="açıklama"
-                style={{ marginTop: "1rem", marginBottom: "4rem" }}
-              >
+              <div className="aciklama">
                 Sağlıklı uygulamalarla yalnız eksik dişlerinizi doldurmayacak
                 aynı zamanda hayat standartınızı artıracak profesyonel implant
                 uygulaması için Bayrampaşa Diş Kliniğimize bekliyoruz.

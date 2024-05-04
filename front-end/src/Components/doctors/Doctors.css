@@ -1,0 +1,31 @@
+.doktors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  background-color: #f6f9f9;
+  /* border: 1px solid green; */
+}
+.doktorsRow {
+  margin-top: 3rem;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.doktorsCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* border: 1px solid black; */
+}
+
+.doktorsH1Div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.doktorsP {
+}

@@ -1,3 +1,4 @@
+import Doctors from "../Components/doctors/Doctors";
 import Hakkımızda from "../Components/hakkımızda/Hakkımızda";
 import Navbar from "../Components/navbar/Navbar";
 import Services from "../Components/services/Services";
@@ -9,6 +10,7 @@ function MainPage() {
       <Navbar />
       <Hakkımızda />
       <Services />
+      <Doctors />
     </>
   );
 }

@@ -20,17 +20,20 @@ function Services() {
           display: "flex",
           justifyContent: "center",
           alignContent: "center",
-          marginTop: "6rem",
+          marginTop: "5rem",
         }}
       >
         <div className="row">
           <div className="col-md-4 ">
             <div className=" servicesCard">
               <div className="servicesIcon" style={{ marginTop: "3rem" }}>
-                Icon
+                <img
+                  src="https://olydent.com/wp-content/uploads/2022/09/dental-implant.webp"
+                  alt=""
+                />
               </div>
               <div className="baslık" style={{ marginTop: "1rem" }}>
-                Başlık
+                <h2>Diş İmplantı</h2>
               </div>
               <div className="aciklama">
                 Sağlıklı uygulamalarla yalnız eksik dişlerinizi doldurmayacak
@@ -43,10 +46,13 @@ function Services() {
           <div className="col-md-4 ">
             <div className=" servicesCard">
               <div className="servicesIcon" style={{ marginTop: "3rem" }}>
-                Icon
+                <img
+                  src="https://olydent.com/wp-content/uploads/2022/08/parlak-dis-logo.webp"
+                  alt=""
+                />
               </div>
               <div className="baslık" style={{ marginTop: "1rem" }}>
-                Başlık
+                <h2>Diş Estetiği</h2>
               </div>
               <div className="aciklama">
                 Sağlıklı uygulamalarla yalnız eksik dişlerinizi doldurmayacak
@@ -59,10 +65,13 @@ function Services() {
           <div className="col-md-4 ">
             <div className=" servicesCard">
               <div className="servicesIcon" style={{ marginTop: "3rem" }}>
-                Icon
+                <img
+                  src="https://olydent.com/wp-content/uploads/2022/08/kanal-tedavisi-icon.webp"
+                  alt=""
+                />
               </div>
               <div className="baslık" style={{ marginTop: "1rem" }}>
-                Başlık
+                <h2>Kanal Tedavisi</h2>
               </div>
               <div className="aciklama">
                 Sağlıklı uygulamalarla yalnız eksik dişlerinizi doldurmayacak
@@ -75,10 +84,13 @@ function Services() {
           <div className="col-md-4 ">
             <div className=" servicesCard">
               <div className="servicesIcon" style={{ marginTop: "3rem" }}>
-                Icon
+                <img
+                  src="https://olydent.com/wp-content/uploads/2022/08/dis-beyazlatma-ikon.webp"
+                  alt=""
+                />
               </div>
               <div className="baslık" style={{ marginTop: "1rem" }}>
-                Başlık
+                <h2>Diş Beyazlatma</h2>
               </div>
               <div className="aciklama">
                 Sağlıklı uygulamalarla yalnız eksik dişlerinizi doldurmayacak
@@ -91,10 +103,13 @@ function Services() {
           <div className="col-md-4 ">
             <div className=" servicesCard">
               <div className="servicesIcon" style={{ marginTop: "3rem" }}>
-                Icon
+                <img
+                  src="https://olydent.com/wp-content/uploads/2022/08/parlak-dis-logo.webp"
+                  alt=""
+                />
               </div>
               <div className="baslık" style={{ marginTop: "1rem" }}>
-                Başlık
+                <h2>Panoramik Röntgen</h2>
               </div>
               <div className="aciklama">
                 Sağlıklı uygulamalarla yalnız eksik dişlerinizi doldurmayacak
@@ -107,10 +122,13 @@ function Services() {
           <div className="col-md-4 ">
             <div className=" servicesCard">
               <div className="servicesIcon" style={{ marginTop: "3rem" }}>
-                Icon
+                <img
+                  src="https://olydent.com/wp-content/uploads/2022/08/kanal-tedavisi-icon.webp"
+                  alt=""
+                />
               </div>
               <div className="baslık" style={{ marginTop: "1rem" }}>
-                Başlık
+                <h2>Diş Teli Tedavisi</h2>
               </div>
               <div className="aciklama">
                 Sağlıklı uygulamalarla yalnız eksik dişlerinizi doldurmayacak

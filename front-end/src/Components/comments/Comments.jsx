@@ -5,11 +5,10 @@ import instagram from "../../assets/instagram.png";
 import facebook from "../../assets/facebook.png";
 function Comments() {
   return (
-    <div className=" mt-5" style={{ backgroundColor: "#F6F9F9" }}>
+    <div className="" style={{ backgroundColor: "#F6F9F9" }}>
       <div
         style={{
           backgroundColor: "#F6F9F9",
-          marginTop: "5rem",
         }}
       >
         <div
@@ -200,7 +199,7 @@ function Comments() {
             <h4>Bizi Takip Edin</h4>
           </div>
 
-          <div className="d-flex justify-content-center mt-5  align-content-center">
+          <div className="d-flex justify-content-center mt-5  align-content-center mb-5">
             <a type="button" href="https://www.instagram.com/olydentklinik/">
               <img
                 src={instagram}

@@ -24,3 +24,7 @@
   line-height: 2.5;
   color: white;
 }
+
+.NumbersRow {
+  --bs-gutter-x: 0;
+}

@@ -23,7 +23,7 @@ function Numbers() {
   });
   return (
     <div className=" NumbersDiv">
-      <div className="row NumbersRow mt-4 mb-4 p-4  ">
+      <div className="row NumbersRow mt-4 mb-4  pt-4">
         <div className="col-md-3  d-flex justify-content-around ">
           <div className=" d-flex justify-content-around align-content-center flex-column">
             <div className="d-flex justify-content-center align-content-center">

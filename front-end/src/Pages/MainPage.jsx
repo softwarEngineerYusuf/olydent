@@ -1,3 +1,4 @@
+import Comments from "../Components/comments/Comments";
 import Doctors from "../Components/doctors/Doctors";
 import Hakkımızda from "../Components/hakkımızda/Hakkımızda";
 import Navbar from "../Components/navbar/Navbar";
@@ -13,6 +14,7 @@ function MainPage() {
       <Services />
       <Doctors />
       <Numbers />
+      <Comments />
     </>
   );
 }

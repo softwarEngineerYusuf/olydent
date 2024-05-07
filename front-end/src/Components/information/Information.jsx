@@ -16,7 +16,7 @@ function Information() {
         </div>
       </div>
 
-      <div style={{ backgroundColor: "#4FDFE1" }}>
+      <div style={{ backgroundColor: "#4FDFE1", paddingBottom: "5rem" }}>
         <div className="container  ">
           <div className="row ">
             <div className="col-md-4  d-flex justify-content-center  ">
@@ -66,7 +66,9 @@ function Information() {
                     data-bs-target="#collapseOne"
                     aria-expanded="false"
                     aria-controls="collapseOne"
-                    style={{ backgroundColor: "#4FDFE1" }}
+                    style={{
+                      backgroundColor: "#4FDFE1",
+                    }}
                   >
                     Devamı
                   </button>

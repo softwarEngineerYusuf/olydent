@@ -1,6 +1,6 @@
 import "./Carousel.css";
 import Video from "../../assets/Video.mp4";
-import Video2 from "../../assets/Video2.mp4";
+import Video1 from "../../assets/Video1.mp4";
 
 function Carousel() {
   return (
@@ -29,7 +29,7 @@ function Carousel() {
         <div className="carousel-inner ">
           <div className="carousel-item active  ">
             <video className="d-block w-100" autoPlay muted loop>
-              <source src={Video2} type="video/mp4" />
+              <source src={Video1} type="video/mp4" />
             </video>
           </div>
           <div className="carousel-item">

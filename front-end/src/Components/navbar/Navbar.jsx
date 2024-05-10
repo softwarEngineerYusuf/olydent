@@ -35,22 +35,59 @@ function Navbar() {
             >
               <div className="navbar-nav" style={{ marginRight: "2rem" }}>
                 <a
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "1.2rem",
+                    color: "black",
+                  }}
                   className="nav-link active Navbarlink"
                   aria-current="page"
                   href="#"
                 >
                   Olydent Bayrampaşa Diş Kliniği
                 </a>
-                <a className="nav-link Navbarlink" href="#">
+                <a
+                  className="nav-link Navbarlink"
+                  href="#"
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "1.2rem",
+                    color: "black",
+                  }}
+                >
                   Kadromuz
                 </a>
-                <a className="nav-link Navbarlink" href="#">
+                <a
+                  className="nav-link Navbarlink"
+                  href="#"
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "1.2rem",
+                    color: "black",
+                  }}
+                >
                   Hakkımızda
                 </a>
-                <a className="nav-link Navbarlink" href="#">
+                <a
+                  className="nav-link Navbarlink"
+                  href="#"
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "1.2rem",
+                    color: "black",
+                  }}
+                >
                   Blog
                 </a>
-                <a className="nav-link Navbarlink" href="#">
+                <a
+                  className="nav-link Navbarlink"
+                  href="#"
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: "1.2rem",
+                    color: "black",
+                  }}
+                >
                   İletişim
                 </a>
               </div>

@@ -12,7 +12,7 @@
   height: 100%;
   object-fit: cover;
   /* height: 50rem; */
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .carousel-item video source {
@@ -24,11 +24,12 @@
 }
 
 .carousel-caption {
+  justify-content: flex-start;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2; /* Carousel'in üzerinde kalması için */
-  color: black; /* Metin rengi */
-  text-align: center; /* Metni ortalamak için */
+  z-index: 2;
+  color: black;
+  text-align: center;
 }

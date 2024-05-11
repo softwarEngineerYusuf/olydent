@@ -1,4 +1,4 @@
-import "./Hakkımızda.css";
+import "./HakkımızdaComponent.css";
 function Hakkımızda() {
   return (
     <>

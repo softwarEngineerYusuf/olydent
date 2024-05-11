@@ -11,7 +11,7 @@ function Navbar() {
           style={{ "--bs-bg-opacity": 0 }}
         >
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="/">
               <img
                 src="https://olydent.com/wp-content/uploads/2023/03/logo.png"
                 alt=""
@@ -42,7 +42,7 @@ function Navbar() {
                   }}
                   className="nav-link active Navbarlink"
                   aria-current="page"
-                  href="#"
+                  href="/"
                 >
                   Olydent Bayrampaşa Diş Kliniği
                 </a>
@@ -59,7 +59,7 @@ function Navbar() {
                 </a>
                 <a
                   className="nav-link Navbarlink"
-                  href="#"
+                  href="/hakkımızda"
                   style={{
                     fontWeight: "bold",
                     fontSize: "1.2rem",

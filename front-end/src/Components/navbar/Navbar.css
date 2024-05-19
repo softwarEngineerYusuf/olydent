@@ -1,18 +1,8 @@
-.navigationBar {
-  position: absolute; /* Navbar'ın carousel içinde sabit kalmasını sağlar */
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-}
 .Navbarlink {
   margin-right: 2rem;
 }
 
-.carousel-wrapper {
-  position: relative;
-}
-.navBar {
+.navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -20,7 +10,13 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  width: 100%;
 }
+
+.content {
+  padding-top: 100px;
+}
+
 @media (max-width: 768px) {
   .navBar {
     flex-direction: column;
@@ -34,6 +30,7 @@
     align-items: center;
   }
 }
+
 @media (max-width: 768px) {
   .navIcon {
     flex-direction: column;
@@ -41,10 +38,12 @@
     margin-top: 1rem;
   }
 }
+
 .navbarLinkDiv .Navbarlink {
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
   position: relative;
   display: inline-block;
+  color: black;
 }
 
 .navbarLinkDiv .Navbarlink .highlight {
@@ -63,6 +62,11 @@
 
 .navbarLinkDiv .Navbarlink:hover .highlight {
   opacity: 1;
+}
+
+.navbarLinkDiv .Navbarlink:hover {
+  background-color: #212529;
+  color: white;
 }
 
 .navbarLinkDiv {
@@ -143,8 +147,9 @@
     opacity: 1;
   }
 }
+
 .link1 {
-  animation: fadeInLink1 s ease forwards;
+  animation: fadeInLink1 2s ease forwards;
 }
 
 .link2 {
@@ -165,11 +170,9 @@
 
 .button-92 {
   --c: #fff;
-
   background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%)
       var(--_p, 100%) / 300% no-repeat,
     #004dff;
-
   color: #0000;
   border: none;
   transform: perspective(500px) rotateY(calc(20deg * var(--_i, -1)));
@@ -200,7 +203,10 @@
   padding: 0.1em 0.3em;
   border-radius: 2rem;
   padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
+
 .css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
   background-color: #212529 !important;
 }

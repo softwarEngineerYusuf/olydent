@@ -19,10 +19,6 @@
   height: auto;
 }
 
-.carousel-wrapper {
-  position: relative;
-}
-
 .carousel-caption {
   justify-content: flex-start;
   position: absolute;

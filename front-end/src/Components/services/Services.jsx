@@ -36,7 +36,7 @@ function Services() {
                 <h2>Diş İmplantı</h2>
               </div>
               <div className="aciklama">
-                <div className="acıklamaAltDiv">
+                <div className="acıklamaAltDiv  ">
                   <p>
                     Sağlıklı uygulamalarla yalnız eksik dişlerinizi
                     doldurmayacak aynı zamanda hayat standartınızı artıracak
@@ -62,10 +62,9 @@ function Services() {
               <div className="aciklama">
                 <div className="acıklamaAltDiv">
                   <p>
-                    Sağlıklı uygulamalarla yalnız eksik dişlerinizi
-                    doldurmayacak aynı zamanda hayat standartınızı artıracak
-                    profesyonel implant uygulaması için Bayrampaşa Diş
-                    Kliniğimize bekliyoruz.
+                    Kliniğimizde gülüş tasarımı, Hollywood Smile, Bonding,
+                    İmplant ve aynı zamanda diğer tüm kapsayıcı koruyucu
+                    tedavileri sizlere sunmaktadır.
                   </p>
                 </div>
               </div>
@@ -86,10 +85,9 @@ function Services() {
               <div className="aciklama">
                 <div className="acıklamaAltDiv">
                   <p>
-                    Sağlıklı uygulamalarla yalnız eksik dişlerinizi
-                    doldurmayacak aynı zamanda hayat standartınızı artıracak
-                    profesyonel implant uygulaması için Bayrampaşa Diş
-                    Kliniğimize bekliyoruz.
+                    Kanal tedavisi çeşitli sebeplere bağlı olarak enfekte olmuş
+                    dişleri kurtarmak için uygulanan bir tedavi yöntemidir. Bu
+                    sebeple diş tedavisinde önemli bir yer tutar.
                   </p>
                 </div>
               </div>
@@ -110,10 +108,10 @@ function Services() {
               <div className="aciklama">
                 <div className="acıklamaAltDiv">
                   <p>
-                    Sağlıklı uygulamalarla yalnız eksik dişlerinizi
-                    doldurmayacak aynı zamanda hayat standartınızı artıracak
-                    profesyonel implant uygulaması için Bayrampaşa Diş
-                    Kliniğimize bekliyoruz.
+                    Klinik ortamında doktor hastanın dişine uygun bir diş
+                    beyazlatma jelini ve ısı ve ultraviyole ışık yardımı ile
+                    uygulama gerçekleştirilir. Böylece temizlenen diş
+                    cilalanarak diş beyazlatma işi tamamlanır.
                   </p>
                 </div>
               </div>
@@ -134,10 +132,11 @@ function Services() {
               <div className="aciklama">
                 <div className="acıklamaAltDiv">
                   <p>
-                    Sağlıklı uygulamalarla yalnız eksik dişlerinizi
-                    doldurmayacak aynı zamanda hayat standartınızı artıracak
-                    profesyonel implant uygulaması için Bayrampaşa Diş
-                    Kliniğimize bekliyoruz.
+                    Tek bir uygulama ile diş hekimlerinin ağzınızın tamamını
+                    kapsamlı göre-bilmesini sağlayan bu yöntem siz değerli
+                    hastalarımıza aynı zamanda en iyi ve en hızlı hizmeti
+                    sunabilmemiz için çok değerli bir uygulamadır. Bu nedenle
+                    doktorlar arasında yaygın olarak tercih edilmektedir.
                   </p>
                 </div>
               </div>
@@ -158,10 +157,11 @@ function Services() {
               <div className="aciklama">
                 <div className="acıklamaAltDiv">
                   <p>
-                    Sağlıklı uygulamalarla yalnız eksik dişlerinizi
-                    doldurmayacak aynı zamanda hayat standartınızı artıracak
-                    profesyonel implant uygulaması için Bayrampaşa Diş
-                    Kliniğimize bekliyoruz.
+                    Diş ve çene eklemlerindeki düzensizliklerde, dişler arasında
+                    olmaması gereken boşlukların giderilmesinde ve aynı zamanda
+                    gülüş tasarımında gerekli olan tedavilerin uygulanabilir
+                    hale getirilmesi noktalarında uygulanan bir tedavi
+                    sürecidir.
                   </p>
                 </div>
               </div>

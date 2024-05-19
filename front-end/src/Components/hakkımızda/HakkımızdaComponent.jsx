@@ -7,10 +7,10 @@ function Hakkımızda() {
           className="MainPage row"
           style={{ display: "flex", justifyContent: "space-between" }}
         >
-          <div className="col-md-6" style={{ width: "550px", height: "500px" }}>
+          <div className="col-md-6" style={{ width: "550px", height: "600px" }}>
             <img
               style={{ width: "100%", height: "100%" }}
-              src="https://cdn.pixabay.com/photo/2017/07/23/10/44/dentist-2530994_1280.jpg"
+              src="../../../public/olydent.JPG"
               alt=""
             />
           </div>

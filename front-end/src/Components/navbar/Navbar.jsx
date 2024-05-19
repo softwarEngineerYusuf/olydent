@@ -15,18 +15,18 @@ function Navbar() {
     if (newOpen) {
       setTimeout(() => {
         setShowLinks(true);
-      }, 100);
+      }, 50);
     } else {
       setShowLinks(false);
     }
   };
 
   const links = [
-    { text: "Olydent Diş Kliniği", href: "/", className: "link1" },
-    { text: "Kadromuz", href: "/", className: "link5" },
-    { text: "Hakkımızda", href: "/hakkımızda", className: "link4" },
-    { text: "Blog", href: "/", className: "link3" },
-    { text: "İletişim", href: "/", className: "link2" },
+    { text: "Olydent Diş Kliniği", href: "/", className: "link5" },
+    { text: "Kadromuz", href: "/", className: "link4" },
+    { text: "Hakkımızda", href: "/hakkımızda", className: "link3" },
+    { text: "Blog", href: "/", className: "link2" },
+    { text: "İletişim", href: "/", className: "link1" },
   ];
 
   const DrawerList = (
@@ -67,8 +67,8 @@ function Navbar() {
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg  container "
-        style={{ backgroundColor: "#212529" }}
+        className="navbar navbar-expand-lg  container  bg-body-tertiary"
+        // style={{ backgroundColor: "#212529" }}
       >
         <div className="container-fluid  ">
           <div

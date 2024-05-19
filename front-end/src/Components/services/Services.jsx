@@ -20,11 +20,11 @@ function Services() {
           display: "flex",
           justifyContent: "center",
           alignContent: "center",
-          marginTop: "5rem",
+          marginBottom: "18rem",
         }}
       >
-        <div className="row">
-          <div className="col-md-4 ">
+        <div className="row mt-5">
+          <div className="col-md-4 mt-5">
             <div className=" servicesCard">
               <div className="servicesIcon" style={{ marginTop: "3rem" }}>
                 <img
@@ -36,14 +36,19 @@ function Services() {
                 <h2>Diş İmplantı</h2>
               </div>
               <div className="aciklama">
-                Sağlıklı uygulamalarla yalnız eksik dişlerinizi doldurmayacak
-                aynı zamanda hayat standartınızı artıracak profesyonel implant
-                uygulaması için Bayrampaşa Diş Kliniğimize bekliyoruz.
+                <div className="acıklamaAltDiv">
+                  <p>
+                    Sağlıklı uygulamalarla yalnız eksik dişlerinizi
+                    doldurmayacak aynı zamanda hayat standartınızı artıracak
+                    profesyonel implant uygulaması için Bayrampaşa Diş
+                    Kliniğimize bekliyoruz.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="col-md-4 ">
+          <div className="col-md-4 mt-5">
             <div className=" servicesCard">
               <div className="servicesIcon" style={{ marginTop: "3rem" }}>
                 <img
@@ -55,14 +60,19 @@ function Services() {
                 <h2>Diş Estetiği</h2>
               </div>
               <div className="aciklama">
-                Sağlıklı uygulamalarla yalnız eksik dişlerinizi doldurmayacak
-                aynı zamanda hayat standartınızı artıracak profesyonel implant
-                uygulaması için Bayrampaşa Diş Kliniğimize bekliyoruz.
+                <div className="acıklamaAltDiv">
+                  <p>
+                    Sağlıklı uygulamalarla yalnız eksik dişlerinizi
+                    doldurmayacak aynı zamanda hayat standartınızı artıracak
+                    profesyonel implant uygulaması için Bayrampaşa Diş
+                    Kliniğimize bekliyoruz.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="col-md-4 ">
+          <div className="col-md-4 mt-5">
             <div className=" servicesCard">
               <div className="servicesIcon" style={{ marginTop: "3rem" }}>
                 <img
@@ -74,14 +84,19 @@ function Services() {
                 <h2>Kanal Tedavisi</h2>
               </div>
               <div className="aciklama">
-                Sağlıklı uygulamalarla yalnız eksik dişlerinizi doldurmayacak
-                aynı zamanda hayat standartınızı artıracak profesyonel implant
-                uygulaması için Bayrampaşa Diş Kliniğimize bekliyoruz.
+                <div className="acıklamaAltDiv">
+                  <p>
+                    Sağlıklı uygulamalarla yalnız eksik dişlerinizi
+                    doldurmayacak aynı zamanda hayat standartınızı artıracak
+                    profesyonel implant uygulaması için Bayrampaşa Diş
+                    Kliniğimize bekliyoruz.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="col-md-4 ">
+          <div className="col-md-4 mt-5">
             <div className=" servicesCard">
               <div className="servicesIcon" style={{ marginTop: "3rem" }}>
                 <img
@@ -93,14 +108,19 @@ function Services() {
                 <h2>Diş Beyazlatma</h2>
               </div>
               <div className="aciklama">
-                Sağlıklı uygulamalarla yalnız eksik dişlerinizi doldurmayacak
-                aynı zamanda hayat standartınızı artıracak profesyonel implant
-                uygulaması için Bayrampaşa Diş Kliniğimize bekliyoruz.
+                <div className="acıklamaAltDiv">
+                  <p>
+                    Sağlıklı uygulamalarla yalnız eksik dişlerinizi
+                    doldurmayacak aynı zamanda hayat standartınızı artıracak
+                    profesyonel implant uygulaması için Bayrampaşa Diş
+                    Kliniğimize bekliyoruz.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="col-md-4 ">
+          <div className="col-md-4 mt-5">
             <div className=" servicesCard">
               <div className="servicesIcon" style={{ marginTop: "3rem" }}>
                 <img
@@ -112,14 +132,19 @@ function Services() {
                 <h2>Panoramik Röntgen</h2>
               </div>
               <div className="aciklama">
-                Sağlıklı uygulamalarla yalnız eksik dişlerinizi doldurmayacak
-                aynı zamanda hayat standartınızı artıracak profesyonel implant
-                uygulaması için Bayrampaşa Diş Kliniğimize bekliyoruz.
+                <div className="acıklamaAltDiv">
+                  <p>
+                    Sağlıklı uygulamalarla yalnız eksik dişlerinizi
+                    doldurmayacak aynı zamanda hayat standartınızı artıracak
+                    profesyonel implant uygulaması için Bayrampaşa Diş
+                    Kliniğimize bekliyoruz.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="col-md-4 ">
+          <div className="col-md-4 mt-5">
             <div className=" servicesCard">
               <div className="servicesIcon" style={{ marginTop: "3rem" }}>
                 <img
@@ -131,9 +156,14 @@ function Services() {
                 <h2>Diş Teli Tedavisi</h2>
               </div>
               <div className="aciklama">
-                Sağlıklı uygulamalarla yalnız eksik dişlerinizi doldurmayacak
-                aynı zamanda hayat standartınızı artıracak profesyonel implant
-                uygulaması için Bayrampaşa Diş Kliniğimize bekliyoruz.
+                <div className="acıklamaAltDiv">
+                  <p>
+                    Sağlıklı uygulamalarla yalnız eksik dişlerinizi
+                    doldurmayacak aynı zamanda hayat standartınızı artıracak
+                    profesyonel implant uygulaması için Bayrampaşa Diş
+                    Kliniğimize bekliyoruz.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

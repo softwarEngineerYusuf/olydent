@@ -1,6 +1,5 @@
 .servicesh1 {
   margin-top: 5rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,14 +10,6 @@
   justify-content: center;
   align-items: center;
 }
-.aciklama {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin-bottom: 3rem;
-  padding: 2rem;
-}
 
 .servicesCard {
   display: flex;
@@ -28,4 +19,53 @@
   background-color: #f6f9f9;
   border-radius: 2rem;
   margin-top: 1rem;
+}
+.aciklama {
+  display: none; /* Başlangıçta gizli */
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f6f9f9;
+  color: black;
+  border-radius: 0.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Tüm genişliği kaplayacak */
+}
+.acıklamaAltDiv {
+  box-sizing: border-box; /* Padding dahil genişlik hesaplama */
+  display: flex; /* Flexbox kullanarak hizalama */
+  flex-direction: column; /* Dikey hizalama */
+  justify-content: center; /* Dikeyde ortalama */
+  align-items: center; /* Yatayda ortalama */
+  transition: visibility 0.3s, opacity 0.3s; /* Geçiş efektleri */
+}
+
+.acıklamaAltDiv p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0; /* Her paragrafın üst ve altına boşluk ekle */
+  width: 100%; /* Tüm genişliği kaplayacak */
+
+  box-sizing: border-box; /* Padding dahil genişlik hesaplama */
+}
+
+.servicesCard:hover .aciklama {
+  visibility: visible; /* Kartın üzerine gelindiğinde görünür yap */
+  opacity: 1; /* Opacity'yi artırarak görünür hale getir */
+}
+
+.servicesCard:hover {
+  height: auto; /* Yüksekliği otomatik yap */
+  padding-bottom: 1rem; /* Alt kısımda boşluk oluştur */
+}
+
+.servicesCard:hover .aciklama {
+  display: flex; /* Açıklamayı görünür yap */
+}
+
+.servicesIcon img {
+  width: 100%;
+  transition: opacity 0;
 }

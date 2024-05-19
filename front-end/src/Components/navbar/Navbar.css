@@ -12,3 +12,195 @@
 .carousel-wrapper {
   position: relative;
 }
+.navBar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #f6f9f9;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .navBarLink {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .navIcon {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+}
+.navbarLinkDiv .Navbarlink {
+  transition: background-color 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.navbarLinkDiv .Navbarlink .highlight {
+  border-radius: 999px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #004dff;
+  mix-blend-mode: difference;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.navbarLinkDiv .Navbarlink:hover .highlight {
+  opacity: 1;
+}
+
+.navbarLinkDiv {
+  display: none;
+}
+
+.showLinks {
+  display: flex !important; /* Linkleri göster */
+  flex-direction: column; /* Linkleri dikey olarak sırala */
+  animation: fadeIn 2s ease forwards; /* 2 saniyede yavaşça görünmesini sağla */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Başlangıçta linklerin opaklığını sıfıra ayarla */
+  }
+  to {
+    opacity: 1; /* 2 saniye sonra linklerin tamamen görünür olmasını sağla */
+  }
+}
+
+@keyframes fadeInLink1 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLink2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLink3 {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLink4 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLink5 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.link1 {
+  animation: fadeInLink1 s ease forwards;
+}
+
+.link2 {
+  animation: fadeInLink2 2s ease forwards;
+}
+
+.link3 {
+  animation: fadeInLink3 2s ease forwards;
+}
+
+.link4 {
+  animation: fadeInLink4 2s ease forwards;
+}
+
+.link5 {
+  animation: fadeInLink5 2s ease forwards;
+}
+
+.button-92 {
+  --c: #fff;
+
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%)
+      var(--_p, 100%) / 300% no-repeat,
+    #004dff;
+
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg * var(--_i, -1)));
+  text-shadow: calc(var(--_i, -1) * 0.08em) -0.01em 0 var(--c),
+    calc(var(--_i, -1) * -0.08em) 0.01em 2px #0004;
+  outline-offset: 0.1em;
+  transition: 0.3s;
+}
+
+.button-92:hover,
+.button-92:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.button-92:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9Q #0005;
+  transition: 0s;
+}
+
+.button-92 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  padding: 0.1em 0.3em;
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+  background-color: #212529 !important;
+}

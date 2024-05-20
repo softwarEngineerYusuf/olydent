@@ -22,11 +22,14 @@ function Appointment() {
   return (
     <div>
       <div className="container">
-        <div className="row " style={{ marginTop: "100px" }}>
-          <div style={{ marginBottom: "2rem" }}>
+        <div className="row ">
+          <div style={{ marginTop: "2rem" }}>
             <h1>Randevu İçin</h1>
           </div>
-          <div className="col-md-6 order-2 order-md-1 ">
+          <div
+            className="col-md-6 order-2 order-md-1  "
+            style={{ marginTop: "4rem" }}
+          >
             <div>
               <TextField
                 style={{ width: "100%" }}
@@ -80,7 +83,10 @@ function Appointment() {
             </div>
           </div>
 
-          <div className="col-md-6 order-1 order-md-2 ">
+          <div
+            className="col-md-6 order-1 order-md-2 "
+            style={{ marginTop: "4rem" }}
+          >
             <div>
               <Carousel autoplay>
                 <div>

@@ -3,12 +3,14 @@ import { useState } from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
+import { useNavigate } from "react-router-dom";
 
 import { FaTooth } from "react-icons/fa";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
   const [showLinks, setShowLinks] = useState(false);
+  const navigate = useNavigate();
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
@@ -114,7 +116,13 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item mt-2 ">
-                <button className="button-92" role="button">
+                <button
+                  onClick={() => {
+                    navigate("randevu");
+                  }}
+                  className="button-92"
+                  role="button"
+                >
                   Randevu al
                 </button>
               </li>

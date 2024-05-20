@@ -10,7 +10,7 @@ function Hakkımızda() {
           <div className="col-md-6" style={{ width: "550px", height: "600px" }}>
             <img
               style={{ width: "100%", height: "100%" }}
-              src="../../../public/olydent.JPG"
+              src="/olydent.JPG"
               alt=""
             />
           </div>

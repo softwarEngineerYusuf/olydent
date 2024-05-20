@@ -70,9 +70,9 @@ function Appointment() {
                   id="demo-simple-select"
                   label="Age"
                 >
-                  <MenuItem value={10}>Mert Sakatya</MenuItem>
-                  <MenuItem value={20}>Izaura Sadıkova</MenuItem>
-                  <MenuItem value={30}>Hakan Kayhan</MenuItem>
+                  <MenuItem value={10}>Muayene</MenuItem>
+                  <MenuItem value={20}>Devam Eden Tedavi</MenuItem>
+                  <MenuItem value={30}>Diş Estetiği</MenuItem>
                 </Select>
               </FormControl>
             </div>

@@ -4,8 +4,9 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
-
+import olydentLogo from "../../assets/olydentLogo.png";
 import { FaTooth } from "react-icons/fa";
+import olydentLogoYazı from "../../assets/olydentLogoYazı.png";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -42,6 +43,11 @@ function Navbar() {
         className={`container ${showLinks ? "showLinks" : ""} navbarLinkDiv`}
         style={{ marginTop: "5rem" }}
       >
+        <img
+          src={olydentLogoYazı}
+          alt=""
+          style={{ width: "200px", height: "50px" }}
+        />
         {links.map((link) => (
           <a
             key={link.text}
@@ -73,10 +79,7 @@ function Navbar() {
         // style={{ backgroundColor: "#212529" }}
       >
         <div className="container-fluid  ">
-          <div
-            className="d-flex justify-content-center  align-content-center"
-            style={{ marginLeft: "3rem" }}
-          >
+          <div className="" style={{ marginLeft: "3rem" }}>
             <Button onClick={toggleDrawer(true)} style={{}}>
               <FaTooth
                 style={{
@@ -102,26 +105,39 @@ function Navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse mt-1 " id="navbarNav">
+          <div className="collapse navbar-collapse mt-1   " id="navbarNav">
             <ul
-              className="navbar-nav d-flex justify-content-center"
-              style={{ width: "100%" }}
+              className="navbar-nav  d-flex   justify-content-evenly align-content-center"
+              style={{
+                width: "100%",
+              }}
             >
-              <li className="nav-item mt-2">
+              <li
+                className="nav-item   d-flex justify-content-end"
+                style={{ width: "60%" }}
+              >
                 <a className="navbar-brand" href="/">
                   <img
-                    src="https://olydent.com/wp-content/uploads/2023/03/logo.png"
+                    style={{
+                      width: "300px",
+                      height: "100px",
+                    }}
+                    src={olydentLogo}
                     alt=""
                   />
                 </a>
               </li>
-              <li className="nav-item mt-2 ">
+              <li
+                className="nav-item  navLinks d-flex justify-content-end align-content-center"
+                style={{ width: "40%" }}
+              >
                 <button
                   onClick={() => {
                     navigate("randevu");
                   }}
-                  className="button-92"
+                  className="button-92 "
                   role="button"
+                  style={{ border: "" }}
                 >
                   Randevu al
                 </button>

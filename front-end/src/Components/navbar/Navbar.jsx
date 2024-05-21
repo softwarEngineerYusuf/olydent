@@ -137,7 +137,6 @@ function Navbar() {
                   }}
                   className="button-92 "
                   role="button"
-                  style={{ border: "" }}
                 >
                   Randevu al
                 </button>

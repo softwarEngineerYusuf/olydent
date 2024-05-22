@@ -11,7 +11,7 @@ function Hakkımızda() {
               <img
                 className="d-flex justify-content-center align-content-center"
                 style={{ width: "33rem", height: "35rem" }}
-                src="https://media.istockphoto.com/id/663904990/id/vektor/karakter-dokter-gigi-dan-pasien.jpg?s=170667a&w=0&k=20&c=ZTPcWB7dGZWhNzngM3up3DxbST2gVxv7jdeBficntAU="
+                src="/A1A07714.JPG"
                 alt=""
               />
             </div>

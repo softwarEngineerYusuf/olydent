@@ -20,7 +20,7 @@ const contentStyle = {
 
 function Appointment() {
   return (
-    <div>
+    <div className=" mb-5">
       <div className="container">
         <div className="row ">
           <div style={{ marginTop: "2rem" }}>

@@ -74,10 +74,7 @@ function Navbar() {
 
   return (
     <>
-      <nav
-        className="navbar navbar-expand-lg  container  bg-body-tertiary"
-        // style={{ backgroundColor: "#212529" }}
-      >
+      <nav className="navbar navbar-expand-lg  container  bg-body-tertiary">
         <div className="container-fluid  ">
           <div className="" style={{ marginLeft: "3rem" }}>
             <Button onClick={toggleDrawer(true)} style={{}}>
@@ -113,7 +110,7 @@ function Navbar() {
               }}
             >
               <li
-                className="nav-item   d-flex justify-content-end"
+                className="nav-item  d-flex justify-content-end "
                 style={{ width: "60%" }}
               >
                 <a className="navbar-brand" href="/">
@@ -121,6 +118,7 @@ function Navbar() {
                     style={{
                       width: "300px",
                       height: "100px",
+                      marginLeft: "",
                     }}
                     src={olydentLogo}
                     alt=""

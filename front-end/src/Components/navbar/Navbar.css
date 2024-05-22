@@ -6,11 +6,13 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: #f6f9f9;
+  background-color: #212529 !important;
   display: flex;
   justify-content: space-between;
   padding: 20px;
   width: 100%;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
 .navLinks {
@@ -186,7 +188,7 @@
   outline-offset: 0.1em;
   transition: 0.3s;
   width: 200px;
-  height: 96px;
+  height: 95px;
 }
 
 .button-92:hover,

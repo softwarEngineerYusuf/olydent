@@ -68,6 +68,17 @@ function Navbar() {
             <span className="highlight"></span>
           </a>
         ))}
+        <div style={{ marginTop: "1rem" }}>
+          <button
+            onClick={() => {
+              navigate("/randevu");
+            }}
+            className="button-71 link1"
+            role="button"
+          >
+            Randevu Al
+          </button>
+        </div>
       </div>
     </Box>
   );

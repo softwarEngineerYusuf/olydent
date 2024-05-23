@@ -23,13 +23,18 @@ function Appointment() {
     <div className=" mb-5">
       <div className="container">
         <div className="row ">
-          <div style={{ marginTop: "2rem" }}>
-            <h1>Randevu İçin</h1>
-          </div>
           <div
             className="col-md-6 order-2 order-md-1  "
-            style={{ marginTop: "4rem" }}
+            style={{
+              marginTop: "4rem",
+              border: "1px solid black",
+              borderRadius: "1rem",
+              padding: "1rem",
+            }}
           >
+            <div style={{ marginBottom: "2rem" }}>
+              <h1>Randevu İçin</h1>
+            </div>
             <div>
               <TextField
                 style={{ width: "100%" }}

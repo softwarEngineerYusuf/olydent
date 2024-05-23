@@ -16,6 +16,7 @@ const contentStyle = {
   textAlign: "center",
   //background: "#364d79",
   width: "500px",
+
 };
 
 function Appointment() {
@@ -87,7 +88,7 @@ function Appointment() {
 
           <div
             className="col-md-6 order-1 order-md-2 "
-            style={{ marginTop: "4rem" }}
+            style={{ marginTop: "4rem"}}
           >
             <div>
               <Carousel autoplay>

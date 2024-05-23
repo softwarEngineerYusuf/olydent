@@ -76,7 +76,7 @@ function Navbar() {
             }}
             role="button"
           >
-            Button 71
+            Randevu Al
           </button>
         </div>
       </div>

@@ -27,9 +27,6 @@ function Appointment() {
             className="col-md-6 order-2 order-md-1  "
             style={{
               marginTop: "4rem",
-              border: "1px solid black",
-              borderRadius: "1rem",
-              padding: "1rem",
             }}
           >
             <div style={{ marginBottom: "2rem" }}>

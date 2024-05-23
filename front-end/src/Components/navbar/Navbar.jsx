@@ -70,13 +70,13 @@ function Navbar() {
         ))}
         <div style={{ marginTop: "1rem" }}>
           <button
+            className="button-71 link1"
             onClick={() => {
               navigate("/randevu");
             }}
-            className="button-71 link1"
             role="button"
           >
-            Randevu Al
+            Button 71
           </button>
         </div>
       </div>

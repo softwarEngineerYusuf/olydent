@@ -84,13 +84,8 @@ function Appointment() {
           </div>
 
           <div
-<<<<<<< HEAD
             className="col-md-6 order-1 order-md-2 "
             style={{ marginTop: "4rem"}}
-=======
-            className="col-md-6 order-1 order-md-2"
-            style={{ marginTop: "4rem" }}
->>>>>>> 89ad3f8302090ad9385093667a47050fa3bbe630
           >
             <div className="carousel-container">
               <Carousel autoplay>

@@ -9,7 +9,7 @@
   background-color: #212529 !important;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 8px;
   width: 100%;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
@@ -61,7 +61,7 @@
   right: 0;
   bottom: 0;
   z-index: -1;
-  background-color: #004dff;
+  background-color: #85713A;
   mix-blend-mode: difference;
   transition: opacity 0.3s ease;
   opacity: 0;
@@ -179,7 +179,7 @@
   --c: #fff;
   background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%)
       var(--_p, 100%) / 300% no-repeat,
-    #004dff;
+      #85713A;
   color: #0000;
   border: none;
   transform: perspective(500px) rotateY(calc(20deg * var(--_i, -1)));
@@ -188,7 +188,7 @@
   outline-offset: 0.1em;
   transition: 0.3s;
   width: 200px;
-  height: 95px;
+  height: 75px;
 }
 
 .button-92:hover,
@@ -221,7 +221,7 @@
 }
 
 .button-71 {
-  background-color: #004dff !important;
+  background-color: #85713A !important;
   border: 0;
   border-radius: 56px;
   color: #fff;

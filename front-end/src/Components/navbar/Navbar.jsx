@@ -76,7 +76,7 @@ function Navbar() {
             }}
             role="button"
           >
-            Button 71
+            Randevu Al
           </button>
         </div>
       </div>
@@ -93,7 +93,7 @@ function Navbar() {
                 style={{
                   width: "50px",
                   height: "50px",
-                  color: "#004dff",
+                  color: "#85713A",
                 }}
               />
             </Button>

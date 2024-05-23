@@ -75,9 +75,7 @@ function Navbar() {
               navigate("/randevu");
             }}
             role="button"
-          >
-            Button 71
-          </button>
+          ></button>
         </div>
       </div>
     </Box>

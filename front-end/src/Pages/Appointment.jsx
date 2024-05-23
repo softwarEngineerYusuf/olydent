@@ -11,20 +11,17 @@ import { Carousel } from "antd";
 
 const contentStyle = {
   height: "600px",
-  //   color: "#fff",
-  //   lineHeight: "160px",
   textAlign: "center",
-  //background: "#364d79",
   width: "500px",
 };
 
 function Appointment() {
   return (
-    <div className=" mb-5">
+    <div className="mb-5">
       <div className="container">
-        <div className="row ">
+        <div className="row">
           <div
-            className="col-md-6 order-2 order-md-1  "
+            className="col-md-6 order-2 order-md-1"
             style={{
               marginTop: "4rem",
             }}
@@ -86,19 +83,34 @@ function Appointment() {
           </div>
 
           <div
-            className="col-md-6 order-1 order-md-2 "
+            className="col-md-6 order-1 order-md-2"
             style={{ marginTop: "4rem" }}
           >
-            <div>
+            <div className="carousel-container">
               <Carousel autoplay>
                 <div>
-                  <img style={contentStyle} src="/olydent.JPG" alt="" />
+                  <img
+                    className="carousel-image"
+                    style={contentStyle}
+                    src="/olydent.JPG"
+                    alt=""
+                  />
                 </div>
                 <div>
-                  <img style={contentStyle} src="/A1A07723.JPG" alt="" />
+                  <img
+                    className="carousel-image"
+                    style={contentStyle}
+                    src="/A1A07723.JPG"
+                    alt=""
+                  />
                 </div>
                 <div>
-                  <img style={contentStyle} src="/A1A07714.JPG" alt="" />
+                  <img
+                    className="carousel-image"
+                    style={contentStyle}
+                    src="/A1A07714.JPG"
+                    alt=""
+                  />
                 </div>
               </Carousel>
             </div>

@@ -1,3 +1,12 @@
+.carousel-container {
+  border-radius: 4rem; /* Border radius değerini burada belirleyin */
+  overflow: hidden; /* Taşmaları gizlemek için */
+}
+
+.carousel-image {
+  border-radius: 4rem; /* Border radius değerini burada belirleyin */
+}
+
 .button-71 {
   background-color: #004dff;
   border: 0;

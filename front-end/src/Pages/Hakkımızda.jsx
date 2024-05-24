@@ -10,7 +10,7 @@ function Hakkımızda() {
             <div className="d-flex justify-content-center align-content-center">
               <img
                 className="d-flex justify-content-center align-content-center"
-                style={{ width: "33rem", height: "35rem" }}
+                style={{ width: "33rem", height: "35rem", borderRadius:"4rem" }}
                 src="/A1A07714.JPG"
                 alt=""
               />
@@ -18,7 +18,7 @@ function Hakkımızda() {
           </div>
           <div className="col-md-6">
             <div>
-              <h1>Hakkımızda</h1>
+              <h1 style={{color:"black"}}>Hakkımızda</h1>
             </div>
             <br />
             <br />

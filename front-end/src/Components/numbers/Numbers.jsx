@@ -14,7 +14,7 @@ function Numbers() {
     delay: 1000,
   });
   const animatedProps2 = useSpring({
-    number: inView ? 1500 : 0,
+    number: inView ? 14000 : 0,
     from: { number: 0 },
     delay: 1000,
   });

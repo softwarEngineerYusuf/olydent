@@ -56,13 +56,13 @@ function Services() {
           {[
             {
               src: "https://olydent.com/wp-content/uploads/2022/09/dental-implant.webp",
-              title: "Diş İmplantı",
+              title: "İmplant Tedavisi",
               description:
                 "Sağlıklı uygulamalarla yalnız eksik dişlerinizi doldurmayacak aynı zamanda hayat standartınızı artıracak profesyonel implant uygulaması için Bayrampaşa Diş Kliniğimize bekliyoruz.",
             },
             {
               src: "https://olydent.com/wp-content/uploads/2022/08/parlak-dis-logo.webp",
-              title: "Diş Estetiği",
+              title: "Estetik Diş Hekimliği",
               description:
                 "Kliniğimizde gülüş tasarımı, Hollywood Smile, Bonding, İmplant ve aynı zamanda diğer tüm kapsayıcı koruyucu tedavileri sizlere sunmaktadır.",
             },
@@ -80,13 +80,31 @@ function Services() {
             },
             {
               src: "https://olydent.com/wp-content/uploads/2022/08/parlak-dis-logo.webp",
-              title: "Panoramik Röntgen",
+              title: "Çocuk Diş Hekimliği",
               description:
                 "Tek bir uygulama ile diş hekimlerinin ağzınızın tamamını kapsamlı göre-bilmesini sağlayan bu yöntem siz değerli hastalarımıza aynı zamanda en iyi ve en hızlı hizmeti sunabilmemiz için çok değerli bir uygulamadır. Bu nedenle doktorlar arasında yaygın olarak tercih edilmektedir.",
             },
             {
               src: "https://olydent.com/wp-content/uploads/2022/08/kanal-tedavisi-icon.webp",
               title: "Diş Teli Tedavisi",
+              description:
+                "Diş ve çene eklemlerindeki düzensizliklerde, dişler arasında olmaması gereken boşlukların giderilmesinde ve aynı zamanda gülüş tasarımında gerekli olan tedavilerin uygulanabilir hale getirilmesi noktalarında uygulanan bir tedavi sürecidir.",
+            },
+            {
+              src: "https://olydent.com/wp-content/uploads/2022/08/kanal-tedavisi-icon.webp",
+              title: "Diş Eti Tedavisi",
+              description:
+                "Diş ve çene eklemlerindeki düzensizliklerde, dişler arasında olmaması gereken boşlukların giderilmesinde ve aynı zamanda gülüş tasarımında gerekli olan tedavilerin uygulanabilir hale getirilmesi noktalarında uygulanan bir tedavi sürecidir.",
+            },
+            {
+              src: "https://olydent.com/wp-content/uploads/2022/08/kanal-tedavisi-icon.webp",
+              title: "Ortodonti",
+              description:
+                "Diş ve çene eklemlerindeki düzensizliklerde, dişler arasında olmaması gereken boşlukların giderilmesinde ve aynı zamanda gülüş tasarımında gerekli olan tedavilerin uygulanabilir hale getirilmesi noktalarında uygulanan bir tedavi sürecidir.",
+            },
+            {
+              src: "https://olydent.com/wp-content/uploads/2022/08/kanal-tedavisi-icon.webp",
+              title: "Bruksizm Tedavisi",
               description:
                 "Diş ve çene eklemlerindeki düzensizliklerde, dişler arasında olmaması gereken boşlukların giderilmesinde ve aynı zamanda gülüş tasarımında gerekli olan tedavilerin uygulanabilir hale getirilmesi noktalarında uygulanan bir tedavi sürecidir.",
             },

@@ -111,8 +111,8 @@ function Navbar() {
             <Button onMouseEnter={toggleDrawer(true)} style={{}}>
               <FaTooth
                 style={{
-                  width: "50px",
-                  height: "50px",
+                  width: "65px",
+                  height: "65px",
                   color: "#85713A",
                 }}
               />

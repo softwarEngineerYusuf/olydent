@@ -1,0 +1,18 @@
+.whatsapp-button {
+  position: fixed; /* Sayfanın sağ alt köşesine sabitle */
+  bottom: 20px; /* Sağ alt köşeden 20px yukarıda */
+  right: 20px; /* Sağ alt köşeden 20px içeride */
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #25d366;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000; /* Diğer içeriklerin üstünde tut */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* Hafif bir gölge ekle */
+}
+
+.whatsapp-button:hover {
+  background-color: #128c7e; /* Hover durumunda arka plan rengini değiştir */
+}

@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
@@ -12,6 +12,7 @@ function Navbar() {
   const [open, setOpen] = useState(false);
   const [showLinks, setShowLinks] = useState(false);
   const navigate = useNavigate();
+  const [navbarBg, setNavbarBg] = useState(false);
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
@@ -23,6 +24,21 @@ function Navbar() {
       setShowLinks(false);
     }
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setNavbarBg(true);
+      } else {
+        setNavbarBg(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const links = [
     { text: "Olydent Diş Kliniği", href: "/", className: "link5" },
@@ -85,10 +101,14 @@ function Navbar() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg  container  bg-body-tertiary">
+      <nav
+        className={`navbar navbar-expand-lg container bg-body-tertiary ${
+          navbarBg ? "navbar-bg-scrolled" : ""
+        }`}
+      >
         <div className="container-fluid  ">
           <div className="" style={{ marginLeft: "3rem" }}>
-            <Button onClick={toggleDrawer(true)} style={{}}>
+            <Button onMouseEnter={toggleDrawer(true)} style={{}}>
               <FaTooth
                 style={{
                   width: "50px",

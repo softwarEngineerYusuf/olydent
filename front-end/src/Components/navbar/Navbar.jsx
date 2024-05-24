@@ -45,7 +45,7 @@ function Navbar() {
     { text: "Kadromuz", href: "/", className: "link4" },
     { text: "Hakkımızda", href: "/hakkımızda", className: "link3" },
     { text: "Blog", href: "/", className: "link2" },
-    { text: "İletişim", href: "/", className: "link1" },
+    { text: "İletişim", href: "/iletişim", className: "link1" },
   ];
 
   const DrawerList = (

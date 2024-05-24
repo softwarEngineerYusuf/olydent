@@ -1,5 +1,6 @@
 .NumbersDiv {
-  background-image: linear-gradient(0deg, #8BA8C6 0%, #B9DBF4 100%);
+   background-image: linear-gradient(0deg, #212529 0%, #444649 100%); 
+  /* background-color: #444649; */
 }
 
 .NumbersSpan {

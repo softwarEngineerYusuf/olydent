@@ -6,6 +6,7 @@ import MainPage from "./Pages/MainPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Appointment from "./Pages/Appointment";
 import WhatsappButton from "./Components/whatsapp/WhatsappButton";
+import Iletişim from "./Pages/Iletişim";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/hakkımızda" element={<Hakkımızda />} />
           <Route path="/randevu" element={<Appointment />} />
+          <Route path="/iletişim" element={<Iletişim />} />
         </Routes>
         <Footer />
         <WhatsappButton />

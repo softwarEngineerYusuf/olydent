@@ -6,7 +6,7 @@ import MainPage from "./Pages/MainPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Appointment from "./Pages/Appointment";
 import ScrollTop from "./ScrollTop";
-
+import IletişimPages from "./Pages/IletişimPages";
 import Iletişim from "./Components/iletişim/Iletişim";
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/hakkımızda" element={<Hakkımızda />} />
           <Route path="/randevu" element={<Appointment />} />
-          <Route path="/iletişim" element={<Iletişim />} />
+          <Route path="/iletişim" element={<IletişimPages />} />
         </Routes>
         <Footer />
         <Iletişim />

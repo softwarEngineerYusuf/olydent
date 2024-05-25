@@ -38,7 +38,7 @@ function Doctors() {
             style={{ marginLeft: "2.5rem", marginRight: "2rem" }}
           >
             <img
-              src="https://olydent.com/wp-content/uploads/2022/06/dis-doktoru-mert-sakarya.webp"
+              src="blob:https://web.whatsapp.com/8e2ee417-06de-4efb-be4c-2687ad3d22d9"
               alt=""
             />
             <div className="doktorsH1Div">

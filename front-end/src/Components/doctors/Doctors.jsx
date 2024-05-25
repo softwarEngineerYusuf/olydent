@@ -35,7 +35,14 @@ function Doctors() {
             className="col-md-4 col-sm-12 doktorsCard"
             style={{ marginLeft: "2.5rem", marginRight: "2rem" }}
           >
+<<<<<<< HEAD
             <img src={Doktor2} alt="" />
+=======
+            <img
+              src="blob:https://web.whatsapp.com/8e2ee417-06de-4efb-be4c-2687ad3d22d9"
+              alt=""
+            />
+>>>>>>> b46e92f5977c1f3d11c1a5b07430f8631ca0ecda
             <div className="doktorsH1Div">
               <h4>Mert Sakarya</h4>
             </div>

@@ -1,5 +1,6 @@
 import "./Doctors.css";
-
+import Doktor1 from "../../assets/Doktor1.jpeg";
+import Doktor2 from "../../assets/Doktor.2.jpeg";
 function Doctors() {
   return (
     <>
@@ -15,10 +16,7 @@ function Doctors() {
             className="col-md-4 col-sm-12 doktorsCard "
             style={{ marginRight: "3rem", marginLeft: "2rem" }}
           >
-            <img
-              src="https://olydent.com/wp-content/uploads/2022/06/dis-doktoru-hakan-kayhan.webp"
-              alt=""
-            />
+            <img src={Doktor1} alt="" />
             <div className="doktorsH1Div">
               <h4>Hakan Kayhan</h4>
             </div>
@@ -37,10 +35,7 @@ function Doctors() {
             className="col-md-4 col-sm-12 doktorsCard"
             style={{ marginLeft: "2.5rem", marginRight: "2rem" }}
           >
-            <img
-              src="https://olydent.com/wp-content/uploads/2022/06/dis-doktoru-mert-sakarya.webp"
-              alt=""
-            />
+            <img src={Doktor2} alt="" />
             <div className="doktorsH1Div">
               <h4>Mert Sakarya</h4>
             </div>

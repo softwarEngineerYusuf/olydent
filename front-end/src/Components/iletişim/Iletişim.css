@@ -1,0 +1,53 @@
+.fixed-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Diğer içeriklerin üstünde olması için */
+  width: "10rem";
+}
+.iletişimButton {
+  width: 150px; /* Buton genişliği */
+  height: 50px; /* Buton yüksekliği */
+  font-size: 16px; /* Yazı boyutu */
+  border-radius: 8px; /* Kenarların yuvarlatılması */
+  background-color: #948252; /* Buton arkaplan rengi */
+  color: white; /* Yazı rengi */
+  border: none; /* Kenarlık kaldırma */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+}
+
+.iletişimButton:hover,
+.iletişimRandevuButton:hover,
+.iletişimHizmetlerimizButton:hover {
+  background-color: #948252 !important;
+  color: white;
+}
+
+.iletişimRandevuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  font-size: 16px;
+  color: #fff;
+  background-color: #948252;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.iletişimHizmetlerimizButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  font-size: 16px;
+  color: #fff;
+  background-color: #948252;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}

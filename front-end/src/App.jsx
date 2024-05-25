@@ -5,12 +5,14 @@ import Hakkımızda from "./Pages/Hakkımızda";
 import MainPage from "./Pages/MainPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Appointment from "./Pages/Appointment";
-import WhatsappButton from "./Components/whatsapp/WhatsappButton";
-import Iletişim from "./Pages/Iletişim";
+import ScrollTop from "./ScrollTop";
+
+import Iletişim from "./Components/iletişim/Iletişim";
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<MainPage />} />
@@ -19,7 +21,7 @@ function App() {
           <Route path="/iletişim" element={<Iletişim />} />
         </Routes>
         <Footer />
-        <WhatsappButton />
+        <Iletişim />
       </BrowserRouter>
     </>
   );

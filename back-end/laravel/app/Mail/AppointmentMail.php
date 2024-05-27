@@ -2,27 +2,26 @@
 
 namespace App\Mail;
 
+use App\Models\Randevu;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
 class AppointmentMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $appointmentData;
+    public $randevu;
 
-    public function __construct($appointmentData)
+    public function __construct(Randevu $randevu)
     {
-        $this->appointmentData = $appointmentData;
+        $this->randevu = $randevu;
     }
 
     public function build()
     {
-        return $this->markdown('mails.appointment')
-                    ->with('data', $this->appointmentData);
+        return $this->subject('New Appointment')
+                    ->markdown('emails.appointment', ['randevu' => $this->randevu]);
     }
 }

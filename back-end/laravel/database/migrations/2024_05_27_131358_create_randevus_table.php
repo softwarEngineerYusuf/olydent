@@ -16,8 +16,8 @@ return new class extends Migration
             $table->timestamps();
             $table->string('name');
             $table->string('phone');
-            $table->string('doctor');
-            $table->string('request');
+            $table->string('doctor')->nullable();
+            $table->string('request')->nullable();
         });
     }
 

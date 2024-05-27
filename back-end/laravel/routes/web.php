@@ -17,4 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/submit-appointment', 'AppointmentController@submit')->name('submit.appointment');
+Route::get('/', function () {
+    Mail::to('skry.emir9@gmail.com')
+    ->send(new AppointmentMail());
+});

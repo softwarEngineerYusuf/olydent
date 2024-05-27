@@ -20,22 +20,26 @@ class RandevuController extends Controller
     }
 //submit
 
-    public function submit(Request $request)
-    {
-        // Validate the submitted data
-        $validatedData = $request->validate([
-            'name' => 'required|string',
-            'phone' => 'required|string',
-            'doctor' => 'nullable|string',
-            'request' => 'nullable|string',
-        ]);
+// public function submit(Request $request)
+// {
+//     // Validate the submitted data
+//     $validatedData = $request->validate([
+//         'name' => 'required|string',
+//         'phone' => 'required|string',
+//         'doctor' => 'nullable|string',
+//         'request' => 'nullable|string',
+//     ]);
 
-        // Send email with appointment details
-        Mail::to('skry.emir9@email.com')->send(new AppointmentMail($validatedData));
+//     // Send email with appointment details
+//     try {
+//         Mail::to('skry.emir9@email.com')->send(new AppointmentMail($validatedData));
+//     } catch (\Exception $e) {
+//         return response()->json(['error' => 'Failed to send email: ' . $e->getMessage()], 500);
+//     }
 
-        // Redirect back with success message
-        return redirect()->back()->with('success', 'Appointment submitted successfully!');
-    }
+//     // If you're expecting a JSON response, you should return JSON
+//     return response()->json(['success' => 'Appointment submitted successfully!']);
+// }
 
 
 
@@ -47,15 +51,26 @@ class RandevuController extends Controller
     public function store(Request $request)
 {
     $validatedData = $request->validate([
-        'name-surname' => 'required',
-        'phone' => 'required',
-        'doctor' => 'optional',
-        'request' => 'optional',
+        'name' => 'required|string',
+        'phone' => 'required|string',
+        'doctor' => 'nullable|string',
+        'request' => 'nullable|string',
     ]);
 
     $Randevu = Randevu::create($validatedData);
+
+    try {
+        Mail::to('skry.emir9@gmail.com')->send(new AppointmentMail($Randevu));
+    } catch (\Exception $e) {
+        // Log error or handle failure gracefully
+        \Log::error('Error sending email: ' . $e->getMessage());
+    }
+
     return response()->json(['message' => 'Randevu created successfully', 'Randevu' => $Randevu]);
 }
+
+
+
 
 public function show($id)
 {
@@ -77,10 +92,10 @@ public function show($id)
 public function update(Request $request, $id)
 {
     $validatedData = $request->validate([
-        'name-surname' => 'required',
-        'phone' => 'required',
-        'doctor' => 'optional',
-        'request' => 'optional',
+        'name' => 'required|string',
+        'phone' => 'required|string',
+        'doctor' => 'nullable|string',
+        'request' => 'nullable|string',
     ]);
 
     $Randevu = Randevu::findOrFail($id);

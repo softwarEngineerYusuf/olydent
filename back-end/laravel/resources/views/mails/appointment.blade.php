@@ -1,12 +1,19 @@
-<x-mail::message>
-# Introduction
+@component('mail::message')
+# New Appointment
 
-The body of your message.
+Hello,
 
-<x-mail::button :url="''">
-Button Text
-</x-mail::button>
+You have a new appointment request with the following details:
 
-Thanks,<br>
-{{ config('app.name') }}
-</x-mail::message>
+- **Name**: {{ $randevu->name }}
+- **Phone**: {{ $randevu->phone }}
+@if ($randevu->doctor)
+- **Doctor**: {{ $randevu->doctor }}
+@endif
+@if ($randevu->request)
+- **Request**: {{ $randevu->request }}
+@endif
+
+Thank you.
+
+@endcomponent

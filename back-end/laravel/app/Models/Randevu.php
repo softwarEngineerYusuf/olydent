@@ -15,6 +15,7 @@ class Randevu extends Model
         'doctor',
         'request',
     ];
+    
 
     protected function data(): Attribute
     {

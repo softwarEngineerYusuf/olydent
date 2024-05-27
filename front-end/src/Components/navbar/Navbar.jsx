@@ -2,7 +2,6 @@ import "./Navbar.css";
 import { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 import olydentLogo from "../../assets/olydentLogo.png";
 import { FaTooth } from "react-icons/fa";
@@ -42,7 +41,7 @@ function Navbar() {
 
   const links = [
     { text: "Olydent Diş Kliniği", href: "/", className: "link5" },
-    { text: "Kadromuz", href: "/", className: "link4" },
+    { text: "Kadromuz", href: "/kadromuz", className: "link4" },
     { text: "Hakkımızda", href: "/hakkımızda", className: "link3" },
     { text: "Blog", href: "/", className: "link2" },
     { text: "İletişim", href: "/iletişim", className: "link1" },
@@ -108,15 +107,16 @@ function Navbar() {
       >
         <div className="container-fluid  ">
           <div className="" style={{ marginLeft: "3rem" }}>
-            <Button onMouseEnter={toggleDrawer(true)} style={{}}>
-              <FaTooth
-                style={{
-                  width: "65px",
-                  height: "65px",
-                  color: "#85713A",
-                }}
-              />
-            </Button>
+            <FaTooth
+              className="DisIcon"
+              onMouseEnter={toggleDrawer(true)}
+              style={{
+                width: "65px",
+                height: "65px",
+                color: "#85713A",
+              }}
+            />
+
             <Drawer open={open} onClose={toggleDrawer(false)}>
               {DrawerList}
             </Drawer>

@@ -176,6 +176,10 @@
   animation: fadeInLink5 2s ease forwards;
 }
 
+.DisIcon {
+  filter: drop-shadow(0 4px 8px rgba(164, 162, 162, 0.5));
+}
+
 .button-92 {
   --c: #fff;
   background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%)
@@ -190,6 +194,8 @@
   transition: 0.3s;
   width: 200px;
   height: 75px;
+  box-shadow: 0 4px 8px rgba(239, 236, 236, 0.3),
+    0 6px 20px rgba(192, 187, 187, 0.19);
 }
 
 .button-92:hover,

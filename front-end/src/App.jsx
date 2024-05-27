@@ -8,6 +8,7 @@ import Appointment from "./Pages/Appointment";
 import ScrollTop from "./ScrollTop";
 import IletişimPages from "./Pages/IletişimPages";
 import Iletişim from "./Components/iletişim/Iletişim";
+import Staff from "./Pages/Staff";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
           <Route path="/hakkımızda" element={<Hakkımızda />} />
           <Route path="/randevu" element={<Appointment />} />
           <Route path="/iletişim" element={<IletişimPages />} />
+          <Route path="/kadromuz" element={<Staff />} />
         </Routes>
         <Footer />
         <Iletişim />

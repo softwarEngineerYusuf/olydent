@@ -37,7 +37,7 @@ function Appointment() {
     if (validate()) {
       console.log({ name, phone, doctor, request });
       try {
-        const response = await axios.post("", {
+        const response = await axios.post("http://127.0.0.1:8000/api/randevus", {
           name,
           phone,
           doctor,

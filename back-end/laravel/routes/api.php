@@ -42,8 +42,8 @@ Route::get('randevus', function(Request $request) {
     return $Randevu;
 
 });
-Route::get('/randevus/{id}',[DoctorsController::class, 'index']);
-Route::post('/randevus/',[DoctorsController::class, 'submit']);
-Route::put('/randevus/{id}',[DoctorsController::class, 'update']);
-Route::delete('/randevus/{id}',[DoctorsController::class, 'destroy']);
+Route::get('/randevus/{id}',[RandevuController::class, 'index']);
+Route::post('/randevus/',[RandevuController::class, 'store']);
+Route::put('/randevus/{id}',[RandevuController::class, 'update']);
+Route::delete('/randevus/{id}',[RandevuController::class, 'destroy']);
 

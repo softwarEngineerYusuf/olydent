@@ -50,11 +50,10 @@ class RandevuController extends Controller
         'name-surname' => 'required',
         'phone' => 'required',
         'doctor' => 'optional',
-        'talebiniz' => 'optional',
+        'request' => 'optional',
     ]);
 
     $Randevu = Randevu::create($validatedData);
-
     return response()->json(['message' => 'Randevu created successfully', 'Randevu' => $Randevu]);
 }
 
@@ -80,8 +79,8 @@ public function update(Request $request, $id)
     $validatedData = $request->validate([
         'name-surname' => 'required',
         'phone' => 'required',
-        'doctor' => 'nullable',
-        'talebiniz' => 'nullable',
+        'doctor' => 'optional',
+        'request' => 'optional',
     ]);
 
     $Randevu = Randevu::findOrFail($id);

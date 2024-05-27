@@ -1,5 +1,6 @@
+import { useState } from "react";
+import axios from "axios";
 import "./Appointment.css";
-
 import {
   TextField,
   FormControl,
@@ -13,10 +14,42 @@ const contentStyle = {
   height: "600px",
   textAlign: "center",
   width: "500px",
-
 };
 
 function Appointment() {
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [doctor, setDoctor] = useState("");
+  const [request, setRequest] = useState("");
+  const [errors, setErrors] = useState({});
+
+  const validate = () => {
+    let tempErrors = {};
+    tempErrors.name = name ? "" : "Bu alan zorunludur.";
+    tempErrors.phone = phone ? "" : "Bu alan zorunludur.";
+
+    setErrors(tempErrors);
+    return Object.values(tempErrors).every((x) => x === "");
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (validate()) {
+      console.log({ name, phone, doctor, request });
+      try {
+        const response = await axios.post("", {
+          name,
+          phone,
+          doctor,
+          request,
+        });
+        console.log(response.data);
+        // Optionally, you can reset the form or show a success message here
+      } catch (error) {
+        console.error(error);
+      }
+    }
+  };
   return (
     <div className="mb-5">
       <div className="container">
@@ -36,6 +69,10 @@ function Appointment() {
                 id="outlined-basic"
                 label="Adınız Soyadınız"
                 variant="outlined"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                error={!!errors.name}
+                helperText={errors.name}
               />
             </div>
             <div>
@@ -44,40 +81,60 @@ function Appointment() {
                 id="outlined-basic"
                 label="Telefon"
                 variant="outlined"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                error={!!errors.phone}
+                helperText={errors.phone}
               />
             </div>
 
             <div>
               <FormControl fullWidth style={{ marginTop: "3rem" }}>
-                <InputLabel id="demo-simple-select-label">Doktor</InputLabel>
+                <InputLabel id="doctor-label">Doktor</InputLabel>
                 <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
-                  label="Age"
+                  labelId="doctor-label"
+                  id="doctor-select"
+                  value={doctor}
+                  onChange={(e) => setDoctor(e.target.value)}
+                  label="Doktor"
                 >
-                  <MenuItem value={10}>Mert Sakatya</MenuItem>
-                  <MenuItem value={20}>Izaura Sadıkova</MenuItem>
-                  <MenuItem value={30}>Hakan Kayhan</MenuItem>
+                  <MenuItem value="">
+                    <em>Seçiniz</em>
+                  </MenuItem>
+                  <MenuItem value="Mert Sakatya">Mert Sakarya</MenuItem>
+                  <MenuItem value="Izaura Sadıkova">Izaura Sadıkova</MenuItem>
+                  <MenuItem value="Hakan Kayhan">Hakan Kayhan</MenuItem>
                 </Select>
               </FormControl>
             </div>
 
             <div>
               <FormControl fullWidth style={{ marginTop: "3rem" }}>
-                <InputLabel id="demo-simple-select-label">Talebiniz</InputLabel>
+                <InputLabel id="request-label">Talebiniz</InputLabel>
                 <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
-                  label="Age"
+                  labelId="request-label"
+                  id="request-select"
+                  value={request}
+                  onChange={(e) => setRequest(e.target.value)}
+                  label="Talebiniz"
                 >
-                  <MenuItem value={10}>Muayene</MenuItem>
-                  <MenuItem value={20}>Devam Eden Tedavi</MenuItem>
-                  <MenuItem value={30}>Diş Estetiği</MenuItem>
+                  <MenuItem value="">
+                    <em>Seçiniz</em>
+                  </MenuItem>
+                  <MenuItem value="Muayene">Muayene</MenuItem>
+                  <MenuItem value="Devam Eden Tedavi">
+                    Devam Eden Tedavi
+                  </MenuItem>
+                  <MenuItem value="Diş Estetiği">Diş Estetiği</MenuItem>
                 </Select>
               </FormControl>
             </div>
             <div style={{ marginTop: "2rem" }}>
-              <button className="button-71" role="button">
+              <button
+                className="button-71"
+                role="button"
+                onClick={handleSubmit}
+              >
                 Randevu Al
               </button>
             </div>
@@ -85,7 +142,7 @@ function Appointment() {
 
           <div
             className="col-md-6 order-1 order-md-2 "
-            style={{ marginTop: "4rem"}}
+            style={{ marginTop: "4rem" }}
           >
             <div className="carousel-container">
               <Carousel autoplay>

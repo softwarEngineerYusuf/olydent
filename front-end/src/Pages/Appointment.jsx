@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 import "./Appointment.css";
 import {
   TextField,
@@ -6,8 +7,6 @@ import {
   InputLabel,
   MenuItem,
   Select,
-  FormHelperText,
-  Button,
 } from "@mui/material";
 import { Carousel } from "antd";
 
@@ -33,14 +32,24 @@ function Appointment() {
     return Object.values(tempErrors).every((x) => x === "");
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validate()) {
-      // Submit the form
       console.log({ name, phone, doctor, request });
+      try {
+        const response = await axios.post("", {
+          name,
+          phone,
+          doctor,
+          request,
+        });
+        console.log(response.data);
+        // Optionally, you can reset the form or show a success message here
+      } catch (error) {
+        console.error(error);
+      }
     }
   };
-
   return (
     <div className="mb-5">
       <div className="container">

@@ -16,6 +16,7 @@
     "@mui/material": "^5.15.16",
     "@react-spring/web": "^9.7.3",
     "antd": "^5.17.3",
+    "axios": "^1.7.2",
     "bootstrap": "^5.3.3",
     "flexboxgrid": "^6.3.1",
     "font-awesome": "^4.7.0",

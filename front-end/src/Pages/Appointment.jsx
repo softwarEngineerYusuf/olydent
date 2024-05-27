@@ -44,7 +44,6 @@ function Appointment() {
           request,
         });
         console.log(response.data);
-        // Optionally, you can reset the form or show a success message here
       } catch (error) {
         console.error(error);
       }

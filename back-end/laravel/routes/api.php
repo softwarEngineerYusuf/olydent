@@ -4,6 +4,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\Doctors;
 use App\Http\Controllers\DoctorsController;
+use App\Models\Randevu;
+use App\Http\Controllers\RandevuController;
+use App\Mail\AppointmentMail;
+use App\Http\Controllers\AppointmentController;
 
 
 /*
@@ -31,3 +35,15 @@ Route::get('/doctors/{id}',[DoctorsController::class, 'index']);
 Route::post('/doctors/',[DoctorsController::class, 'store']);
 Route::put('/doctors/{id}',[DoctorsController::class, 'update']);
 Route::delete('/doctors/{id}',[DoctorsController::class, 'destroy']);
+
+//Randevular
+Route::get('randevus', function(Request $request) {
+    $Randevu = Randevu::all();
+    return $Randevu;
+
+});
+Route::get('/randevus/{id}',[DoctorsController::class, 'index']);
+Route::post('/randevus/',[DoctorsController::class, 'submit']);
+Route::put('/randevus/{id}',[DoctorsController::class, 'update']);
+Route::delete('/randevus/{id}',[DoctorsController::class, 'destroy']);
+

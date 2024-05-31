@@ -1,6 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
 import { Helmet } from "react-helmet";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./Appointment.css";
 import {
   TextField,
@@ -32,11 +34,10 @@ function Appointment() {
     setErrors(tempErrors);
     return Object.values(tempErrors).every((x) => x === "");
   };
-  //axioss
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (validate()) {
-      console.log({ name, phone, doctor, request });
       try {
         const response = await axios.post(
           "http://127.0.0.1:8000/api/randevus",
@@ -47,12 +48,23 @@ function Appointment() {
             request,
           }
         );
+        toast.success("Randevunuz Oluşturuldu!", {
+          autoClose: 2500,
+        });
+        setTimeout(() => {
+          window.location.reload();
+        }, 2500);
         console.log(response.data);
       } catch (error) {
+        toast.error("Randevu Oluşturulamadı!", {
+          autoClose: 2500,
+        });
+
         console.error(error);
       }
     }
   };
+
   return (
     <div className="mb-5">
       <Helmet>
@@ -121,7 +133,7 @@ function Appointment() {
                   <MenuItem value="">
                     <em>Seçiniz</em>
                   </MenuItem>
-                  <MenuItem value="Mert Sakatya">Mert Sakarya</MenuItem>
+                  <MenuItem value="Mert Sakarya">Mert Sakarya</MenuItem>
                   <MenuItem value="Izaura Sadıkova">Izaura Sadıkova</MenuItem>
                   <MenuItem value="Hakan Kayhan">Hakan Kayhan</MenuItem>
                 </Select>
@@ -195,6 +207,7 @@ function Appointment() {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { Carousel } from "antd";
 import OlydentVideo1 from "../../assets/OlydentVideo1.mp4";
 import OlydentVideo2 from "../../assets/OlydentVideo2.mp4";
 import OlydentVideo3 from "../../assets/OlydentVideo3.mp4";
-import OlydentVideo4 from "../../assets/OlydentVideo4.mp4";
+// import OlydentVideo4 from "../../assets/OlydentVideo4.mp4";
 
 function Carousell() {
   return (
@@ -25,11 +25,11 @@ function Carousell() {
               <source src={OlydentVideo3} type="video/mp4" />
             </video>
           </div>
-          <div>
+          {/* <div>
             <video autoPlay muted loop>
               <source src={OlydentVideo4} type="video/mp4" />
             </video>
-          </div>
+          </div> */}
         </Carousel>
       </div>
     </>

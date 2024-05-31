@@ -6,7 +6,10 @@ import { Button, Popover } from "antd";
 function Iletişim() {
   const navigate = useNavigate();
   const content = (
-    <div className="popover-content-custom d-flex flex-column  ">
+    <div
+      className="popover-content-custom d-flex flex-column  "
+      style={{ width: "300px" }}
+    >
       <div className="mt-2" style={{ width: "100%" }}>
         <WhatsappButton />
       </div>

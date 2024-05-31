@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 import "./Appointment.css";
 import {
   TextField,
@@ -37,12 +38,15 @@ function Appointment() {
     if (validate()) {
       console.log({ name, phone, doctor, request });
       try {
-        const response = await axios.post("http://127.0.0.1:8000/api/randevus", {
-          name,
-          phone,
-          doctor,
-          request,
-        });
+        const response = await axios.post(
+          "http://127.0.0.1:8000/api/randevus",
+          {
+            name,
+            phone,
+            doctor,
+            request,
+          }
+        );
         console.log(response.data);
       } catch (error) {
         console.error(error);
@@ -51,6 +55,23 @@ function Appointment() {
   };
   return (
     <div className="mb-5">
+      <Helmet>
+        <title>Randevu-Olydent Diş Kliniği</title>
+        <meta
+          name="description"
+          content=" Olydent Bayrampaşa Diş Kliniğine hemen randevu alın."
+        />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Randevu",
+              "url": "https://www.olydent.com"
+            }
+          `}
+        </script>
+      </Helmet>
       <div className="container">
         <div className="row">
           <div

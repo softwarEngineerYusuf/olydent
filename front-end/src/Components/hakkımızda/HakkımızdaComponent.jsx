@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import "./HakkımızdaComponent.css";
-
+import { Link } from "react-router-dom";
 function Hakkımızda() {
   const imageRef = useRef(null);
   const textRef = useRef(null);
@@ -49,7 +49,7 @@ function Hakkımızda() {
           style={{ width: "550px", height: "600px" }}
         >
           <img
-            style={{ width: "100%", height: "100%", borderRadius:"4rem" }}
+            style={{ width: "100%", height: "100%", borderRadius: "4rem" }}
             src="/olydent.JPG"
             alt=""
           />
@@ -78,7 +78,9 @@ function Hakkımızda() {
             ve %100 müşteri memnuniyetini amaçlamaktadır.
           </p>
           <div className="bilgiButonDiv">
-            <button className="bilgiButton">Daha Fazla Bilgi</button>
+            <Link to="/Hakkımızda">
+              <button className="bilgiButton">Daha Fazla Bilgi</button>
+            </Link>
           </div>
         </div>
       </div>

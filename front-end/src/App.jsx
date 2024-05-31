@@ -1,4 +1,5 @@
 import "./App.css";
+import { Helmet } from "react-helmet";
 import Navbar from "./Components/navbar/Navbar";
 import Footer from "./Components/footer/Footer";
 import Hakkımızda from "./Pages/Hakkımızda";
@@ -14,6 +15,29 @@ function App() {
     <>
       <BrowserRouter>
         <ScrollTop />
+        <Helmet>
+          <title>Bayrampaşa Olydent Diş Kliniği</title>
+          <meta
+            name="description"
+            content="Olydent Bayrampaşa Diş Kliniği resmi web sitesi."
+          />
+          <script type="application/ld+json">
+            {`
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Olydent Bayrampaşa Diş Kliniği",
+                "url": "https://www.olydent.com",
+                "logo": "https://www.olydent.com/logo.png",
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+1-401-555-1212",
+                  "contactType": "Müşteri Hizmetleri"
+                }
+              }
+            `}
+          </script>
+        </Helmet>
         <Navbar />
         <Routes>
           <Route path="/" element={<MainPage />} />

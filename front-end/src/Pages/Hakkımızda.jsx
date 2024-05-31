@@ -1,16 +1,38 @@
 import Services from "../Components/services/Services";
 import "./Hakkımızda.css";
-
+import { Helmet } from "react-helmet";
 function Hakkımızda() {
   return (
     <>
+      <Helmet>
+        <title>Hakkımızda - Olydent Diş Kliniği</title>
+        <meta
+          name="description"
+          content=" Bayrampaşa Olydent Diş Kliniği hakkında bilgi edinin."
+        />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Hakkımızda",
+              "url": "https://www.olydent.com"
+            }
+          `}
+        </script>
+      </Helmet>
+
       <div className="container mt-5">
         <div className="row">
           <div className="col-md-6">
             <div className="d-flex justify-content-center align-content-center">
               <img
                 className="d-flex justify-content-center align-content-center"
-                style={{ width: "33rem", height: "35rem", borderRadius:"4rem" }}
+                style={{
+                  width: "33rem",
+                  height: "35rem",
+                  borderRadius: "4rem",
+                }}
                 src="/A1A07714.JPG"
                 alt=""
               />
@@ -18,7 +40,7 @@ function Hakkımızda() {
           </div>
           <div className="col-md-6">
             <div>
-              <h1 style={{color:"black"}}>Hakkımızda</h1>
+              <h1 style={{ color: "black" }}>Hakkımızda</h1>
             </div>
             <br />
             <br />

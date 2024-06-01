@@ -42,6 +42,26 @@ class RandevuController extends Controller
 // }
 
 
+public function testEmail()
+{
+    try {
+        Mail::to('skry.emir9@gmail.com')->send(new AppointmentMail());
+        return response()->json(['message' => 'Test email sent successfully']);
+    } catch (\Exception $e) {
+        Log::error('Error sending email: ' . $e->getMessage());
+        return response()->json(['message' => 'Error sending email'], 500);
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -79,12 +79,12 @@ public function testEmail()
 
     $Randevu = Randevu::create($validatedData);
 
-    try {
-        Mail::to('skry.emir9@gmail.com')->send(new AppointmentMail($Randevu));
-    } catch (\Exception $e) {
-        // Log error or handle failure gracefully
-        \Log::error('Error sending email: ' . $e->getMessage());
-    }
+    // try {
+    //     Mail::to('skry.emir9@gmail.com')->send(new AppointmentMail($Randevu));
+    // } catch (\Exception $e) {
+    //     // Log error or handle failure gracefully
+    //     \Log::error('Error sending email: ' . $e->getMessage());
+    // }
 
     return response()->json(['message' => 'Randevu created successfully', 'Randevu' => $Randevu]);
 }

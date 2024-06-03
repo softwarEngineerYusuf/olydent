@@ -55,6 +55,7 @@ function Appointment() {
           window.location.reload();
         }, 2500);
         console.log(response.data);
+        
       } catch (error) {
         toast.error("Randevu Oluşturulamadı!", {
           autoClose: 2500,
@@ -62,6 +63,26 @@ function Appointment() {
 
         console.error(error);
       }
+      
+      // try {
+      //   const response = await axios.post(
+      //     "http://127.0.0.1:8000/api/send-email",
+      //     {
+      //       name,
+      //       phone,
+      //       doctor,
+      //       request,
+      //     }
+      //   );
+       
+      //   console.log( " Mesaj Başarıyla Gönderildi" ,response.data);
+       
+      // } catch (error) {
+        
+
+      //   console.error(error);
+      // }
+
     }
   };
 

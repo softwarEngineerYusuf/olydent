@@ -14,8 +14,8 @@ class mailController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
             'phone' => 'required|string|max:255',
-            'doctor' => 'required|string|max:255',
-            'request' => 'required|string',
+            'doctor' => 'nullable|string|max:255',
+            'request' => 'nullable|string',
         ]);
 
         if ($validator->fails()) {

@@ -8,6 +8,8 @@ use App\Models\Randevu;
 use App\Http\Controllers\RandevuController;
 use App\Mail\AppointmentMail;
 use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\EmailController    ;
+
 
 
 /*
@@ -47,4 +49,8 @@ Route::get('/randevus/{id}',[RandevuController::class, 'index']);
 Route::post('/randevus/',[RandevuController::class, 'store']);
 Route::put('/randevus/{id}',[RandevuController::class, 'update']);
 Route::delete('/randevus/{id}',[RandevuController::class, 'destroy']);
+
+
+// mail 
+Route::post('/send-email', [EmailController::class, 'sendEmail']);
 

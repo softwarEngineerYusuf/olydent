@@ -12,23 +12,16 @@ class AppointmentMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    // public $randevu;
-    
+    public $details;
 
-    // public function __construct(Randevu $randevu)
-    // {
-    //     $this->randevu = $randevu;
-    // }
-
-    // public function build()
-    // {
-    //     return $this->subject('New Appointment')
-    //                 ->markdown('emails.appointment', ['randevu' => $this->randevu]);
-    // }
+    public function __construct($details)
+    {
+        $this->details = $details;
+    }
 
     public function build()
     {
-        return $this->subject('Test Email')
-                    ->view('emails.test');
+        return $this->subject('New Request Submitted')
+                    ->view('emails.request');
     }
 }

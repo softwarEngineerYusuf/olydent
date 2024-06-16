@@ -27,7 +27,8 @@
     "react-intersection-observer": "^9.10.2",
     "react-router-dom": "^6.23.1",
     "react-spring": "^9.7.3",
-    "react-toastify": "^10.0.5"
+    "react-toastify": "^10.0.5",
+    "proxy": "https://olydent.net/laravel"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
@@ -39,4 +40,5 @@
     "eslint-plugin-react-refresh": "^0.4.6",
     "vite": "^5.2.0"
   }
+  
 }

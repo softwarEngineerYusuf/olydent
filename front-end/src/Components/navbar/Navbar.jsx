@@ -43,6 +43,7 @@ function Navbar() {
     { text: "Olydent Diş Kliniği", href: "/", className: "link5" },
     { text: "Kadromuz", href: "/kadromuz", className: "link4" },
     { text: "Hakkımızda", href: "/hakkımızda", className: "link3" },
+    { text: "Fiyat Listesi", href: "/fiyat-Listesi", className: "link3" },
     { text: "Blog", href: "/", className: "link2" },
     { text: "İletişim", href: "/iletişim", className: "link1" },
   ];

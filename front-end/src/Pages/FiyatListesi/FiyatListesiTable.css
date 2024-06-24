@@ -1,0 +1,22 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  font-size: 1.2em; /* Yazı boyutunu büyütür */
+  padding: 12px; /* Hücrelerin dolgusunu artırır */
+}
+
+.table th {
+  font-weight: bold; /* Başlıkların kalın yazılmasını sağlar */
+}
+
+@media (max-width: 600px) {
+  .table th,
+  .table td {
+    font-size: 1em; /* Küçük ekranlarda yazı boyutunu küçültür */
+  }
+}

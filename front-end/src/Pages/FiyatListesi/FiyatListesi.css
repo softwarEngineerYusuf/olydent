@@ -1,0 +1,38 @@
+.FiyatListesiGenel {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.panel-wrapper {
+  margin-bottom: 20px;
+}
+.ant-collapse-header {
+  font-size: 1.5em;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+}
+
+.ant-collapse-content {
+  font-size: 1em;
+}
+
+.ant-collapse-arrow {
+  font-size: 1.5em;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .ant-collapse-header {
+    font-size: 1.2em;
+    height: 50px;
+  }
+
+  .ant-collapse-content {
+    font-size: 0.9em;
+  }
+}

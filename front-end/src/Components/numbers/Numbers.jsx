@@ -24,7 +24,7 @@ function Numbers() {
     delay: 1000,
   });
   const animatedProps4 = useSpring({
-    number: inView ? 10 : 0,
+    number: inView ? 50 : 0,
     from: { number: 0 },
     delay: 1000,
   });
@@ -109,7 +109,7 @@ function Numbers() {
               </animated.span>
               <span>+</span>
             </div>
-            <div className="NumbersName">AKTİF MUAYENEHANE</div>
+            <div className="NumbersName">HİZMETLERİMİZ</div>
           </div>
         </div>
       </div>

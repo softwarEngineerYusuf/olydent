@@ -155,7 +155,6 @@ function Appointment() {
                     <em>Seçiniz</em>
                   </MenuItem>
                   <MenuItem value="Mert Sakarya">Mert Sakarya</MenuItem>
-                  <MenuItem value="Izaura Sadıkova">Izaura Sadıkova</MenuItem>
                   <MenuItem value="Hakan Kayhan">Hakan Kayhan</MenuItem>
                 </Select>
               </FormControl>

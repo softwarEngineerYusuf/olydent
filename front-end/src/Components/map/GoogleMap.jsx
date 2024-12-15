@@ -21,7 +21,8 @@ function GoogleMap() {
             Çalışma Saatlerimiz
           </h1>
           <h4 style={{ color: "white" }}>Pzt-Cum: 11.00-23.00</h4>
-          <h4 style={{ color: "white" }}>Cumartesi:11.00-18.00</h4>
+          <h4 style={{ color: "white" }}>Cumartesi: 11.00-18.00</h4>
+          <h4 style={{ color: "white" }}>Pazar: 11.00-18.00</h4>
         </div>
 
         <div className="col-md-6 col-sm-12 mt-4 mt-md-0">

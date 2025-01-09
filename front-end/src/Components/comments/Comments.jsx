@@ -41,7 +41,7 @@ function Comments() {
 
                 <div className="" style={{ marginLeft: "1.5rem" }}>
                   <p>fatmanur koçak</p>
-                  <h6>07/10/2022</h6>
+                  <h6>07/10/2024</h6>
                 </div>
               </div>
               <div className="mt-3">
@@ -83,7 +83,7 @@ function Comments() {
 
                 <div className="" style={{ marginLeft: "1.5rem" }}>
                   <p>veysel karani GENC</p>
-                  <h6>07/10/2022</h6>
+                  <h6>07/10/2024</h6>
                 </div>
               </div>
               <div className="mt-3">
@@ -125,7 +125,7 @@ function Comments() {
 
                 <div className="" style={{ marginLeft: "1.5rem" }}>
                   <p>Nagihan Kibir</p>
-                  <h6>07/10/2022</h6>
+                  <h6>07/10/2024</h6>
                 </div>
               </div>
               <div className="mt-3">
@@ -167,7 +167,7 @@ function Comments() {
 
                 <div className="" style={{ marginLeft: "1.5rem" }}>
                   <p>Örgü ve eğlence</p>
-                  <h6>19/09/2022</h6>
+                  <h6>19/09/2024</h6>
                 </div>
               </div>
               <div className="mt-3">
